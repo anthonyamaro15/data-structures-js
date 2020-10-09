@@ -24,6 +24,7 @@ function binarySearch(arr, value) {
 
 // console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 40));
 
+// bubble sort
 function bubbleSort(arr) {
   let noSwaps = false;
 
@@ -42,4 +43,23 @@ function bubbleSort(arr) {
   return arr;
 }
 
-console.log(bubbleSort([3, 5, 2, 1, 5, 85, 24, 56, 4, 6, 4, 23, 211, 1, 3]));
+// selectionSort
+function selectionSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let lowest = i;
+
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[lowest]) {
+        lowest = j;
+      }
+    }
+    if (i !== lowest) {
+      let temp = arr[i];
+      arr[i] = arr[lowest];
+      arr[lowest] = temp;
+    }
+  }
+  return arr;
+}
+
+console.log(selectionSort([3, 5, 2, 1, 5, 85, 24, 56, 4, 6, 4, 23, 211, 1, 3]));
