@@ -62,4 +62,4 @@ function selectionSort(arr) {
   return arr;
 }
 
-console.log(selectionSort([3, 5, 2, 1, 5, 85, 24, 56, 4, 6, 4, 23, 211, 1, 3]));
+// console.log(selectionSort([3, 5, 2, 1, 5, 85, 24, 56, 4, 6, 4, 23, 211, 1, 3]));
