@@ -48,6 +48,7 @@ class BST {
       // start queue with the current root
       queue.push(node);
 
+      // testing
       // while queue is not empty
       while(queue.length) {
          // remove the first value from queue
